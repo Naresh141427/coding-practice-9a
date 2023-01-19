@@ -1,0 +1,31 @@
+POST http://localhost:3000/register
+content-type: application/json
+
+{
+    "username" : "anupu_naveen",
+    "name" : "anupu naveen",
+    "password" : "naveen@1234",
+    "gender" : "male",
+    "location" : "gollapalle"
+}
+
+###
+POST http://localhost:3000/login
+content-type: application/json
+
+{
+    "username" : "anupu_naveen",
+    "password" : "naveen@1234"
+}
+
+###
+
+PUT http://localhost:3000/change-password
+content-type: application/json
+
+{
+    "username" : "anupu_naveen",
+    "oldpassword" : "naveen@1234",
+    "newpassword" : "naveen_1234"
+
+}
