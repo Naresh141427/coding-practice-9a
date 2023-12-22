@@ -26,7 +26,7 @@ const initializeDBAndServer = async () => {
   }
 };
 
-initializeDbAndServer();
+initializeDBAndServer();
 
 app.post("/register", async (request, response) => {
   const { username, name, password, gender, location } = request.body;
